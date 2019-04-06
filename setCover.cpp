@@ -34,7 +34,7 @@ main(){
         while(it !=elem.end()){
             unordered_set<int> x =elem_conj[it->first];
             for(auto &y: x){
-                conj_elem.erase(it->first);
+                conj_elem.erase(y);
                 elem.erase(it);
             }
             res ++;
