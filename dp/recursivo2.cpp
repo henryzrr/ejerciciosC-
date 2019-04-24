@@ -48,11 +48,14 @@ int fraccionarMonto(int monto, int pos){
 int main(){
     clock_t ti,tf;
     int monto,res;
-    scanf("%i",&monto);
-    ti = clock();
-    res = fraccionarMonto(monto,0);
-    tf = clock();
-    printf("%i\n",res);
-    printf("%f\n",(double)(tf-ti)/CLOCKS_PER_SEC);
+    while(true){
+        scanf("%i",&monto);
+        ti = clock();
+        res = fraccionarMonto(monto,0);
+        tf = clock();
+        printf("%i\n",res);
+        printf("%f\n",(double)(tf-ti)/CLOCKS_PER_SEC);
+    }
+    
     return 0;
 }
